@@ -16,7 +16,7 @@ public class NullsAndAnnotationsApplication {
     @Bean
     CommandLineRunner init(BookRepository repository) {
 		return args -> {
-			String isbn = "1234567899";c
+			String isbn = "1234567899";
 			System.out.println( repository.getByIsbn10(isbn) );
 		};
 	}
